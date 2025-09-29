@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest Frais à Mort collection. Limited edition streetwear drops available for pre-order.">
     <title>SHOP | FRAIS À MORT</title>
+    
+    <!-- EXTERNAL RESOURCES -->
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Site Header -->
+    <!-- SITE HEADER: Fixed navigation consistent across all pages -->
     <header>
+        <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
         
-        <!-- Main Navigation -->
+        <!-- MAIN NAVIGATION: Centered menu for major sections -->
         <nav>
             <ul>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
@@ -22,20 +34,88 @@
         </nav>
     </header>
 
-    <!-- Main Content for the Homepage -->
+    <!-- MAIN CONTENT: Product showcase and collection -->
     <main>
-        <h1>THE DROP</h1>
-        <p>ITEM 001: ÉCLAT NOIR TEE - R650</p>
-        <p>ITEM 002: RUE HOODIE - R1200</p>
-        <p>ITEM 003: RÉVOLTE BEANIE - R350</p>
-        <p>[COMING 09.25.25]</p>
+        <!-- SHOP CONTENT SECTION: Product grid and pricing -->
+        <section class="content-section shop-content">
+            <h1>SS25 Collection</h1>
+            <p>Available 25.09.25 - Limited Quantities</p>
+            
+            <!-- PRODUCT GRID: CSS Grid layout for items -->
+            <div class="product-grid">
+                <!-- TOPS CATEGORY -->
+                <div class="product-item">
+                    <p>Éclat Noir Tee</p>
+                    <p>Heavyweight black cotton</p>
+                    <p>R 650</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>Blanc Pur Tee</p>
+                    <p>Oversized white essential</p>
+                    <p>R 650</p>
+                </div>
+                
+                <!-- OUTERWEAR CATEGORY -->
+                <div class="product-item">
+                    <p>Rue Hoodie</p>
+                    <p>Cropped oversized fit</p>
+                    <p>R 1200</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>Noir Crewneck</p>
+                    <p>Minimalist heavyweight</p>
+                    <p>R 950</p>
+                </div>
+                
+                <!-- BOTTOMS CATEGORY -->
+                <div class="product-item">
+                    <p>Cargo Noir Pants</p>
+                    <p>Utility fit with pockets</p>
+                    <p>R 1400</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>Track Black Pants</p>
+                    <p>Signature stripe detail</p>
+                    <p>R 1100</p>
+                </div>
+                
+                <!-- ACCESSORIES CATEGORY -->
+                <div class="product-item">
+                    <p>Révolte Beanie</p>
+                    <p>Embroidered logo</p>
+                    <p>R 350</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>005 Camo Cap</p>
+                    <p>Structured crown</p>
+                    <p>R 450</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>Crossbody Bag</p>
+                    <p>Water-resistant nylon</p>
+                    <p>R 800</p>
+                </div>
+            </div>
+            
+            <!-- COLLECTION FOOTNOTE: Brand messaging -->
+            <div style="text-align: center; margin-top: 3rem; opacity: 0.7;">
+                <p>All items are limited edition. Once sold out, they will not be restocked.</p>
+                <p>Free shipping on orders over R1000</p>
+            </div>
+        </section>
     </main>
 
-    <!-- Site Footer -->
+    <!-- SITE FOOTER: Consistent across all pages -->
     <footer>
-        <p>© 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
+    <!-- EXTERNAL JAVASCRIPT: For future interactivity -->
     <script src="js/script.js"></script>
 </body>
 </html>
