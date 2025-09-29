@@ -1,0 +1,321 @@
+/* ===== CSS RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== SSENSE-INSPIRED VARIABLES ===== */
+:root {
+    /* Color Scheme - White background like clean fashion sites */
+    --color-bg: #ffffff;      /* Pure white background */
+    --color-text: #000000;    /* Black text */
+    --color-accent: #000000;  /* Black for accents */
+    --color-gray: #f5f5f5;    /* Light gray for elements */
+    --color-border: #e5e5e5;  /* Subtle light borders */
+
+    /* Typography - Clean, sophisticated sans-serif */
+    --font-heading: 'Helvetica Neue', Arial, sans-serif;
+    --font-body: 'Helvetica Neue', Arial, sans-serif;
+    
+    /* Spacing - Generous like SSENSE */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+}
+
+/* ===== BASE TYPOGRAPHY (SSENSE Style) ===== */
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    font-weight: 300; /* SSENSE uses light font weights */
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400; /* Regular weight, not bold */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+/* ===== SSENSE-STYLE HEADER & NAVIGATION ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md) var(--space-lg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95); /* White background */
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--color-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* SSENSE-style right-aligned navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: var(--space-lg);
+    margin-left: auto; /* Push navigation to the right */
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* ===== SSENSE HERO SECTION ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--space-md);
+    margin-top: 0; /* Remove margin since header is fixed */
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: var(--space-sm);
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-lg);
+    opacity: 0.8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ===== SSENSE-STYLE FORM ===== */
+form {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+input, textarea {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    padding: var(--space-sm);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 300px;
+    text-transform: uppercase;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--color-text);
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+button {
+    background: var(--color-text); /* Black background */
+    color: var(--color-bg); /* White text */
+    border: 1px solid var(--color-text);
+    padding: var(--space-sm) var(--space-md);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* ===== MAIN CONTENT SECTIONS ===== */
+main {
+    max-width: 1400px; /* SSENSE uses very wide containers */
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-lg);
+    margin-top: 80px; /* Account for fixed header */
+}
+
+.content-section {
+    margin-bottom: var(--space-xl);
+}
+
+.about-content h1, .shop-content h1 {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    font-weight: 300;
+}
+
+.about-content p, .shop-content p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* ===== SSENSE PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.product-item {
+    text-align: center;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-gray); /* Light gray background for products */
+}
+
+.product-item p {
+    margin-bottom: var(--space-xs);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-item p:first-child {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.product-item p:last-child {
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+/* ===== SSENSE FOOTER ===== */
+footer {
+    text-align: center;
+    padding: var(--space-lg);
+    border-top: 1px solid var(--color-border);
+    margin-top: var(--space-xl);
+}
+
+footer p {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ===== RESPONSIVE DESIGN - SSENSE STYLE ===== */
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 3rem;
+        --space-xl: 4rem;
+    }
+    
+    header {
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    nav ul {
+        gap: var(--space-md);
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        left: auto;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    main {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    form {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    input, textarea {
+        width: 100%;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-md);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    header {
+        padding: var(--space-sm);
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .logo {
+        position: static;
+        transform: none;
+        order: -1; /* Logo first on mobile */
+    }
+    
+    nav ul {
+        gap: var(--space-sm);
+        margin-left: 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .hero p {
+        font-size: 0.8rem;
+    }
+    
+    .about-content h1, .shop-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .product-item {
+        padding: var(--space-sm);
+    }
+}

@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRAIS À MORT | Fresh to Death</title>
+    <meta name="description" content="Frais à Mort - Premium streetwear brand. Limited edition drops, urban fashion, and exclusive collections.">
+    <title>FRAIS À MORT | Premium Streetwear</title>
+    
+    <!-- EXTERNAL RESOURCES -->
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Site Header -->
+    <!-- SITE HEADER: Fixed navigation consistent across all pages -->
     <header>
+        <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
         
-        <!-- Main Navigation -->
+        <!-- MAIN NAVIGATION: Centered menu for major sections -->
         <nav>
             <ul>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
@@ -22,23 +34,81 @@
         </nav>
     </header>
 
-    <!-- Main Content for the Homepage -->
+    <!-- MAIN CONTENT: Homepage showcase -->
     <main>
+        <!-- HERO SECTION: Brand introduction and main call-to-action -->
         <section class="hero">
-            <h1>FRESH TO DEATH</h1>
-            <p>THE NEXT DROP: 09.25.25</p>
-            <form id="email-form">
-                <input type="email" placeholder="ENTER EMAIL FOR ACCESS" required>
-                <button type="submit">JOIN</button>
+            <h1>FRAIS À MORT</h1>
+            <p>FRESH TO DEATH</p>
+            <p style="font-size: 0.8rem; margin-top: 1rem; opacity: 0.8;">SS25 COLLECTION AVAILABLE 25.09.25</p>
+            <a href="shop.html" style="margin-top: 2rem; display: inline-block;">
+                <button type="button">VIEW COLLECTION</button>
+            </a>
+        </section>
+
+        <!-- FEATURED COLLECTION SECTION: Preview of products -->
+        <section class="content-section">
+            <h2>SS25: RÉVOLTE COLLECTION</h2>
+            <p>Limited edition streetwear crafted for the urban avant-garde. Each piece tells a story of rebellion and refinement.</p>
+            
+            <!-- FEATURED ITEMS GRID: Showcase key products -->
+            <div class="product-grid" style="margin-top: 3rem;">
+                <div class="product-item">
+                    <p>RUE HOODIE</p>
+                    <p>Signature oversized fit</p>
+                    <p>R 1200</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>CARGO NOIR PANTS</p>
+                    <p>Utility meets style</p>
+                    <p>R 1400</p>
+                </div>
+                
+                <div class="product-item">
+                    <p>ÉCLAT NOIR TEE</p>
+                    <p>Essential heavyweight</p>
+                    <p>R 650</p>
+                </div>
+            </div>
+            
+            <!-- COLLECTION CTA -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="shop.html">
+                    <button type="button">EXPLORE FULL COLLECTION</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- BRAND STORY SECTION: Quick about section -->
+        <section class="content-section" style="text-align: center; border-top: 1px solid #333; padding-top: 4rem;">
+            <h2>WHAT IS FRAIS À MORT?</h2>
+            <p>French for "Fresh to Death" - a philosophy of style so definitive it's lethal.</p>
+            <p>Limited drops. No restocks. Pure exclusivity.</p>
+            <a href="about.html" style="margin-top: 1.5rem; display: inline-block;">
+                <button type="button" style="background: transparent; color: white; border: 1px solid white;">OUR STORY</button>
+            </a>
+        </section>
+
+        <!-- NEWSLETTER SECTION: Email capture as secondary feature -->
+        <section class="content-section" style="text-align: center; border-top: 1px solid #333; padding-top: 4rem;">
+            <h2>JOIN THE DROP LIST</h2>
+            <p>Get exclusive early access to new collections and limited releases.</p>
+            
+            <!-- EMAIL CAPTURE FORM: Secondary call-to-action -->
+            <form id="email-form" style="justify-content: center; margin-top: 1.5rem;">
+                <input type="email" placeholder="ENTER YOUR EMAIL" required aria-label="Email for exclusive access">
+                <button type="submit">SUBSCRIBE</button>
             </form>
         </section>
     </main>
 
-    <!-- Site Footer -->
+    <!-- SITE FOOTER: Consistent across all pages -->
     <footer>
-        <p>© 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
+        <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
+    <!-- EXTERNAL JAVASCRIPT: For future interactivity -->
     <script src="js/script.js"></script>
 </body>
 </html>
