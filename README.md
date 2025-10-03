@@ -66,6 +66,17 @@ Home (index.html)
 ├── About (about.html)
 └── Contact (contact.html)
 
+## Responsive Design Evidence
+
+### Desktop View (1200px+)
+![Desktop View](https://github.com/tevinmashele/frais-a-mort-website/blob/main/desktop-screenshot.png?raw=true)
+
+### Tablet View (768px)
+![Tablet View](https://github.com/tevinmashele/frais-a-mort-website/blob/main/tablet-screenshot.png?raw=true)
+
+### Mobile View (375px)
+![Mobile View](https://github.com/tevinmashele/frais-a-mort-website/blob/main/mobile-screenshot.png?raw=true)
+
 ## References
 
 ### Academic & Technical References
@@ -85,14 +96,3 @@ ColorHunt. (2023). *Dark Color Palettes*. Retrieved from https://colorhunt.co/
 
 ### Competitor Analysis References
 Various streetwear brand websites were analyzed for design patterns and user experience trends in 2023.
-
-## Responsive Design Evidence
-
-### Desktop View (1200px+)
-![Desktop View](desktop-screenshot.png)
-
-### Tablet View (768px)
-![Tablet View](tablet-screenshot.png)
-
-### Mobile View (375px)
-![Mobile View](mobile-screenshot.png)
