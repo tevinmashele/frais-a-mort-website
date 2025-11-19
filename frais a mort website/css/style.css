@@ -318,4 +318,57 @@ footer p {
     .product-item {
         padding: var(--space-sm);
     }
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    gap: 4px;
+    margin-left: auto; /* This pushes it to the right */
+}
+
+.mobile-menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+    display: block;
+}
+
+/* Header layout for mobile */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+        order: 2; /* Makes it appear after logo */
+    }
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
