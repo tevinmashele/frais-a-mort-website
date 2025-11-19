@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frais à Mort - Premium streetwear brand. Limited edition drops, urban fashion, and exclusive collections.">
-    <title>FRAIS À MORT | Premium Streetwear</title>
+    <title>FRAIS À MORT | Premium Streetwear & Luxury Fashion</title>
+    <meta name="description" content="Frais à Mort - Premium streetwear brand. Limited edition drops, urban fashion, and exclusive collections. French for 'Fresh to Death'.">
+    <meta name="keywords" content="streetwear, luxury fashion, limited edition, Frais à Mort, premium clothing, urban fashion">
+    <meta name="author" content="FRAIS À MORT">
     
-    <!-- EXTERNAL RESOURCES -->
-    <!-- Google Fonts for premium typography -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FRAIS À MORT | Premium Streetwear">
+    <meta property="og:description" content="Limited edition streetwear crafted for the urban avant-garde.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fraisamort.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fraisamort.com">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
-    
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- SITE HEADER: Fixed navigation consistent across all pages -->
     <header>
-        <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
-        
-        <!-- MOBILE MENU BUTTON -->
         <button class="mobile-menu-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        
-        <!-- MAIN NAVIGATION: Centered menu for major sections -->
         <nav>
             <ul>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
@@ -39,11 +39,13 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <!-- ADD SEARCH BOX HERE -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="SEARCH PRODUCTS...">
+        </div>
     </header>
 
-    <!-- MAIN CONTENT: Homepage showcase -->
     <main>
-        <!-- HERO SECTION: Brand introduction and main call-to-action -->
         <section class="hero">
             <h1>FRAIS À MORT</h1>
             <p>FRESH TO DEATH</p>
@@ -53,36 +55,33 @@
             </a>
         </section>
 
-        <!-- FEATURED COLLECTION SECTION: Preview of products -->
         <section class="content-section">
             <h2>SS25: RÉVOLTE COLLECTION</h2>
             <p>Limited edition streetwear crafted for the urban avant-garde. Each piece tells a story of rebellion and refinement.</p>
             
-            <!-- FEATURED ITEMS GRID: Showcase key products with images -->
             <div class="product-grid" style="margin-top: 3rem;">
                 <div class="product-item">
-                    <img src="images/hoodie.jpg" alt="Rue Hoodie - Signature oversized fit" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/hoodie.jpg" alt="Rue Hoodie - Signature oversized fit" class="product-image" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
                     <p>RUE HOODIE</p>
                     <p>Signature oversized fit</p>
                     <p>R 1200</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/pants.jpg" alt="Cargo Noir Pants - Utility meets style" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/pants.jpg" alt="Cargo Noir Pants - Utility meets style" class="product-image" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
                     <p>f a m PANTS</p>
                     <p>Utility meets style</p>
                     <p>R 1400</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/tee.jpg" alt="Éclat Noir Tee - Essential heavyweight" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/tee.jpg" alt="Éclat Noir Tee - Essential heavyweight" class="product-image" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 1rem;">
                     <p>ÉCLAT NOIR TEE</p>
                     <p>Essential heavyweight</p>
                     <p>R 650</p>
                 </div>
             </div>
             
-            <!-- COLLECTION CTA -->
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="shop.html">
                     <button type="button">EXPLORE FULL COLLECTION</button>
@@ -90,7 +89,6 @@
             </div>
         </section>
 
-        <!-- BRAND STORY SECTION: Quick about section -->
         <section class="content-section" style="text-align: center; border-top: 1px solid #333; padding-top: 4rem;">
             <h2>WHAT IS FRAIS À MORT?</h2>
             <p>French for "Fresh to Death" - a philosophy of style so definitive it's lethal.</p>
@@ -100,12 +98,10 @@
             </a>
         </section>
 
-        <!-- NEWSLETTER SECTION: Email capture as secondary feature -->
         <section class="content-section" style="text-align: center; border-top: 1px solid #333; padding-top: 4rem;">
             <h2>JOIN THE DROP LIST</h2>
             <p>Get exclusive early access to new collections and limited releases.</p>
             
-            <!-- EMAIL CAPTURE FORM: Secondary call-to-action -->
             <form id="email-form" style="justify-content: center; margin-top: 1.5rem;">
                 <input type="email" placeholder="ENTER YOUR EMAIL" required aria-label="Email for exclusive access">
                 <button type="submit">SUBSCRIBE</button>
@@ -113,12 +109,19 @@
         </section>
     </main>
 
-    <!-- SITE FOOTER: Consistent across all pages -->
     <footer>
         <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
-    <!-- EXTERNAL JAVASCRIPT: For interactive features -->
+    <!-- LIGHTBOX OVERLAY -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

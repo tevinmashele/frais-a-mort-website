@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Frais à Mort - our philosophy, mission, and what makes us unique in streetwear culture.">
-    <title>ABOUT | FRAIS À MORT</title>
+    <title>ABOUT | FRAIS À MORT - Brand Philosophy & Story</title>
+    <meta name="description" content="Discover the FRAIS À MORT philosophy. French for 'Fresh to Death' - a movement built on exclusive, limited-quantity drops and urban style.">
+    <meta name="keywords" content="Frais à Mort about, brand story, streetwear philosophy, limited edition fashion">
+    <meta name="author" content="FRAIS À MORT">
     
-    <!-- EXTERNAL RESOURCES -->
-    <!-- Google Fonts for premium typography -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ABOUT | FRAIS À MORT - Brand Philosophy">
+    <meta property="og:description" content="French for 'Fresh to Death' - a commitment to style so definitive it's lethal.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fraisamort.com/about.html">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fraisamort.com/about.html">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
-    
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- SITE HEADER: Fixed navigation consistent across all pages -->
     <header>
-        <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
-        
-        <!-- ADD THIS BUTTON -->
         <button class="mobile-menu-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        
-        <!-- MAIN NAVIGATION: Centered menu for major sections -->
         <nav>
             <ul>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
@@ -39,26 +39,34 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <!-- ADD SEARCH BOX HERE -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="SEARCH PRODUCTS...">
+        </div>
     </header>
 
-    <!-- MAIN CONTENT: Brand story and philosophy -->
     <main>
-        <!-- ABOUT CONTENT SECTION: Company history and mission -->
         <section class="content-section about-content">
             <h1>What is Frais à Mort?</h1>
-            <!-- BRAND PHILOSOPHY: Core values and meaning -->
             <p>French slang for "Fresh to Death." It's an attitude. A declaration. A commitment to style so definitive it's lethal.</p>
             <p>We are not a brand; we are a movement. Built on the ethos of exclusive, limited-quantity drops.</p>
             <p>No restocks. No repeats. Only what's next.</p>
         </section>
     </main>
 
-    <!-- SITE FOOTER: Consistent across all pages -->
     <footer>
         <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
-    <!-- EXTERNAL JAVASCRIPT: For future interactivity -->
+    <!-- LIGHTBOX OVERLAY -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

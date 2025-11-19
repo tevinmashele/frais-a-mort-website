@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop the latest Frais à Mort collection. Limited edition streetwear drops available for pre-order.">
-    <title>SHOP | FRAIS À MORT</title>
+    <title>FRAIS À MORT | Premium Streetwear & Luxury Fashion</title>
+    <meta name="description" content="Frais à Mort - Premium streetwear brand. Limited edition drops, urban fashion, and exclusive collections. French for 'Fresh to Death'.">
+    <meta name="keywords" content="streetwear, luxury fashion, limited edition, Frais à Mort, premium clothing, urban fashion">
+    <meta name="author" content="FRAIS À MORT">
     
-    <!-- EXTERNAL RESOURCES -->
-    <!-- Google Fonts for premium typography -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FRAIS À MORT | Premium Streetwear">
+    <meta property="og:description" content="Limited edition streetwear crafted for the urban avant-garde.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fraisamort.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fraisamort.com">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
-    
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,8 +28,7 @@
     <header>
         <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
-
-        <!-- ADD THIS BUTTON -->
+        <!-- MOBILE MENU BUTTON -->
         <button class="mobile-menu-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -39,8 +44,12 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <!-- ADD SEARCH BOX HERE -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="SEARCH PRODUCTS...">
+        </div>
     </header>
-
+    
     <!-- MAIN CONTENT: Product showcase and collection -->
     <main>
         <!-- SHOP CONTENT SECTION: Product grid and pricing -->
@@ -52,14 +61,14 @@
             <div class="product-grid">
                 <!-- TOPS CATEGORY -->
                 <div class="product-item">
-                    <img src="images/tee.jpg" alt="Éclat Noir Tee - Heavyweight black cotton" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/tee.jpg" alt="Éclat Noir Tee - Heavyweight black cotton" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Éclat Noir Tee</p>
                     <p>Heavyweight black cotton</p>
                     <p>R 650</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/white-tee.jpg" alt="Blanc Pur Tee - Oversized white essential" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/white-tee.jpg" alt="Blanc Pur Tee - Oversized white essential" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Blanc Pur Tee</p>
                     <p>Oversized white essential</p>
                     <p>R 650</p>
@@ -67,14 +76,14 @@
                 
                 <!-- OUTERWEAR CATEGORY -->
                 <div class="product-item">
-                    <img src="images/hoodie.jpg" alt="Rue Hoodie - Cropped oversized fit" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/hoodie.jpg" alt="Rue Hoodie - Cropped oversized fit" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Rue Hoodie</p>
                     <p>Cropped oversized fit</p>
                     <p>R 1200</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/crewneck.jpg" alt="Noir Crewneck - Minimalist heavyweight" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/crewneck.jpg" alt="Noir Crewneck - Minimalist heavyweight" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Noir Crewneck</p>
                     <p>Minimalist heavyweight</p>
                     <p>R 950</p>
@@ -82,14 +91,14 @@
                 
                 <!-- BOTTOMS CATEGORY -->
                 <div class="product-item">
-                    <img src="images/pants.jpg" alt="Cargo Noir Pants - Utility fit with pockets" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/pants.jpg" alt="Cargo Noir Pants - Utility fit with pockets" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>f a m Pants</p>
                     <p>Utility fit with pockets</p>
                     <p>R 1400</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/track-pants.jpg" alt="Track Black Pants - Signature stripe detail" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/track-pants.jpg" alt="Track Black Pants - Signature stripe detail" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Track Black Pants</p>
                     <p>Signature stripe detail</p>
                     <p>R 1100</p>
@@ -97,21 +106,21 @@
                 
                 <!-- ACCESSORIES CATEGORY -->
                 <div class="product-item">
-                    <img src="images/beanie.jpg" alt="Révolte Beanie - Embroidered logo" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/beanie.jpg" alt="Révolte Beanie - Embroidered logo" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Révolte Beanie</p>
                     <p>Embroidered logo</p>
                     <p>R 350</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/cap.jpg" alt="005 Camo Cap - Structured crown" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/cap.jpg" alt="005 Camo Cap - Structured crown" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>005 Camo Cap</p>
                     <p>Structured crown</p>
                     <p>R 450</p>
                 </div>
                 
                 <div class="product-item">
-                    <img src="images/bag.jpg" alt="Crossbody Bag - Water-resistant nylon" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
+                    <img src="images/bag.jpg" alt="Crossbody Bag - Water-resistant nylon" class="product-image" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 1rem;">
                     <p>Crossbody Bag</p>
                     <p>Water-resistant nylon</p>
                     <p>R 800</p>
@@ -131,7 +140,16 @@
         <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
-<!-- EXTERNAL JAVASCRIPT: For interactive features -->
-<script src="script.js"></script>
+    <!-- Lightbox Overlay -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- EXTERNAL JAVASCRIPT: For interactive features -->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- META INFORMATION FOR BROWSERS & SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Frais à Mort for collaborations, press inquiries, or customer support. Get in touch with our team.">
-    <title>CONTACT | FRAIS À MORT</title>
+    <title>FRAIS À MORT | Premium Streetwear & Luxury Fashion</title>
+    <meta name="description" content="Frais à Mort - Premium streetwear brand. Limited edition drops, urban fashion, and exclusive collections. French for 'Fresh to Death'.">
+    <meta name="keywords" content="streetwear, luxury fashion, limited edition, Frais à Mort, premium clothing, urban fashion">
+    <meta name="author" content="FRAIS À MORT">
     
-    <!-- EXTERNAL RESOURCES -->
-    <!-- Google Fonts for premium typography -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FRAIS À MORT | Premium Streetwear">
+    <meta property="og:description" content="Limited edition streetwear crafted for the urban avant-garde.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fraisamort.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fraisamort.com">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue&display=swap" rel="stylesheet">
-    
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- SITE HEADER: Fixed navigation consistent across all pages -->
     <header>
-        <!-- BRAND LOGO: Links back to homepage -->
         <a href="index.html" class="logo">FRAIS À MORT</a>
-        <!-- ADD THIS BUTTON -->
-
         <button class="mobile-menu-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        
-        <!-- MAIN NAVIGATION: Centered menu for major sections -->
         <nav>
             <ul>
                 <li><a href="lookbook.html">LOOKBOOK</a></li>
@@ -39,45 +39,58 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
+        <!-- ADD SEARCH BOX HERE -->
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="SEARCH PRODUCTS...">
+        </div>
     </header>
 
-    <!-- MAIN CONTENT: Contact information and form -->
     <main>
-        <!-- CONTACT CONTENT SECTION: Ways to reach the brand -->
         <section class="content-section">
             <h1>Contact Us</h1>
-            
-            <!-- CONTACT INTRODUCTION: Purpose of the page -->
             <p>For collaborations, press inquiries, or just to show us your style.</p>
-            
-            <!-- SOCIAL MEDIA INFORMATION: Alternative contact methods -->
             <p>Follow us on Instagram: @fraisamort</p>
             <p>Or send us a message directly using the form on this page.</p>
             <p>(Please allow 48 hours for a response.)</p>
             
-            <!-- CONTACT FORM: User input for inquiries -->
-            <form>
-                <!-- NAME FIELD: User identification -->
-                <input type="text" placeholder="NAME" required aria-label="Your name">
+            <!-- UPDATED FORM WITH VALIDATION -->
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">NAME *</label>
+                    <input type="text" id="contactName" name="name" required minlength="2" maxlength="50">
+                    <span class="error-message" id="contactNameError"></span>
+                </div>
                 
-                <!-- EMAIL FIELD: Response contact method -->
-                <input type="email" placeholder="EMAIL" required aria-label="Your email">
+                <div class="form-group">
+                    <label for="contactEmail">EMAIL *</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                    <span class="error-message" id="contactEmailError"></span>
+                </div>
                 
-                <!-- MESSAGE FIELD: Inquiry details -->
-                <textarea placeholder="MESSAGE" required aria-label="Your message"></textarea>
+                <div class="form-group">
+                    <label for="contactMessage">MESSAGE *</label>
+                    <textarea id="contactMessage" name="message" required minlength="10" maxlength="500"></textarea>
+                    <span class="error-message" id="contactMessageError"></span>
+                </div>
                 
-                <!-- SUBMIT BUTTON: Form submission -->
                 <button type="submit">SEND</button>
             </form>
         </section>
     </main>
 
-    <!-- SITE FOOTER: Consistent across all pages -->
     <footer>
         <p>&copy; 2025 FRAIS À MORT. ALL RIGHTS RESERVED.</p>
     </footer>
 
-    <!-- EXTERNAL JAVASCRIPT: For future interactivity -->
+    <!-- LIGHTBOX OVERLAY -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

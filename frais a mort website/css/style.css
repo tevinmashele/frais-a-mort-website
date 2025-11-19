@@ -90,6 +90,54 @@ nav a {
     font-weight: 300;
 }
 
+/* ===== MOBILE MENU STYLES ===== */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    gap: 4px;
+    margin-left: auto; /* This pushes it to the right */
+}
+
+.mobile-menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    transition: 0.3s;
+    display: block;
+}
+
+/* ===== SEARCH STYLES ===== */
+.search-container {
+    margin-left: auto;
+    margin-right: var(--space-md);
+}
+
+.search-input {
+    width: 200px;
+    padding: var(--space-sm);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    background: transparent;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.search-input::placeholder {
+    color: var(--color-text);
+    opacity: 0.7;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--color-text);
+}
+
 /* ===== SSENSE HERO SECTION ===== */
 .hero {
     height: 100vh;
@@ -231,6 +279,64 @@ footer p {
     text-transform: uppercase;
 }
 
+/* ===== LIGHTBOX STYLES ===== */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-caption {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
 /* ===== RESPONSIVE DESIGN - SSENSE STYLE ===== */
 
 /* Tablet Styles */
@@ -276,6 +382,43 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: var(--space-md);
     }
+    
+    /* Mobile search styles */
+    .search-container {
+        order: 3;
+        width: 100%;
+        margin: var(--space-sm) 0 0 0;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    /* Mobile menu styles */
+    .mobile-menu-toggle {
+        display: flex;
+        order: 2; /* Makes it appear after logo */
+    }
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 /* Mobile Styles */
@@ -318,57 +461,59 @@ footer p {
     .product-item {
         padding: var(--space-sm);
     }
-/* Mobile Menu Styles */
-.mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    gap: 4px;
-    margin-left: auto; /* This pushes it to the right */
 }
 
-.mobile-menu-toggle span {
-    width: 20px;
-    height: 2px;
-    background-color: black;
-    transition: 0.3s;
+/* ===== FORM VALIDATION STYLES ===== */
+.form-group {
+    margin-bottom: var(--space-md);
+    text-align: left;
+}
+
+.form-group label {
     display: block;
+    margin-bottom: var(--space-xs);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
-/* Header layout for mobile */
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 20px;
-    }
-    
-    .mobile-menu-toggle {
-        display: flex;
-        order: 2; /* Makes it appear after logo */
-    }
-    
-    nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    nav.active {
-        display: block;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: var(--space-xs);
+}
+
+/* Error States */
+input.error, textarea.error {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+.error-message {
+    display: block;
+    color: #dc2626;
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.success-message {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    border: 1px solid #bbf7d0;
+    border-radius: 0;
+    font-size: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
